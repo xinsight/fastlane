@@ -100,7 +100,7 @@ module Spaceship
 
         payload = {
           iss: issuer_id,
-          iat: now.to_i,
+          iat: now.to_i - 60,
           exp: @expiration.to_i,
           aud: 'appstoreconnect-v1'
         }
